@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_GET['book']) AND ($_GET['book'] == 1)) {
-	$eBook = new eBook('ebooks/ebook_test/OPS/');
+	$eBook = new eBook('ebooks/ebook_test/Ops/');
 } elseif (isset($_GET['book']) AND ($_GET['book'] == 2)) {
 	$eBook = new eBook('ebooks/ebook_test2/OPS/');
 }

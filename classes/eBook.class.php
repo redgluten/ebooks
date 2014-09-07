@@ -33,15 +33,24 @@ class eBook {
                         $ebookElementPath = $nodeChild->getAttribute('href');
 
                         // Adding chapters to content
+                        // by searching for HTML documents references
                         if ($ebookElementType == 'application/xhtml+xml') {
 
                             // Reads chapter file content into a string
                             $chapter = file_get_contents($pathToEbook . $ebookElementPath);
 
                             // Get the content of the body tag
-                            preg_match('/<body.*\/body>/s', $chapter, $matches);
+                            preg_match('#<body[^>]*>(.*?)<\/body>#is', $chapter, $matches);
+                            $chapterBody = $matches[1];
 
-                            $this->content .= $matches[0];
+                            // Search & replace src attributes inside img tags
+                            $imgPath = 'src="' . $pathToEbook;
+                            $chapterBody = preg_replace('#src="#i', $imgPath, $chapterBody);
+
+                            // Search & remove styles attributes
+                            $chapterBody = preg_replace('#style="([^"]*)"#i', '', $chapterBody);
+
+                            $this->content .= $chapterBody;
                         }
 
                         // Getting images paths
