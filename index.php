@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // Affichage des erreurs
 @ini_set('display_errors', 'on');
@@ -7,7 +7,7 @@
 require_once "functions.php";
 
 // Création d’un nouveau livre
-$eBook = new eBook;
+$eBook = new eBook('ebooks/ebook_test/Ops/10.html');
 
 ?>
 
@@ -18,7 +18,7 @@ $eBook = new eBook;
 <?php include "head.php"; ?>
 
 <body>
-	
+
 	<div class="page-wrapper">
 		<?php include "header.php"; ?>
 		<?php include "content.php"; ?>
