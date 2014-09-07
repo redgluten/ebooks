@@ -16,7 +16,7 @@ $beige:     #F6F6F2;
 $lightRed:  #C03A17;
 $darkRed:   #782610;
 $lightGray: #E7E9E8;
-$Gray:      #BBBCBB;
+$gray:      #BBBCBB;
 $darkGray:  #272822;
 $black:     black;
 
@@ -163,6 +163,13 @@ body {
 		margin: auto;
 		max-width: 50rem;
 		overflow: hidden;
+
+		img {
+			margin: auto;
+			display: block;
+			max-height: 400px;
+			border: 2px solid $gray;
+		}
 	}
 }
 

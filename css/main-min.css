@@ -207,6 +207,11 @@ body {
     margin: auto;
     max-width: 50rem;
     overflow: hidden; }
+    .content .ebook-content img {
+      margin: auto;
+      display: block;
+      max-height: 400px;
+      border: 2px solid #BBBCBB; }
 
 /* ----------------- */
 /* 404 & easter eggs */
