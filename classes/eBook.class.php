@@ -11,8 +11,8 @@ class eBook {
         $file = file_get_contents($pathToEbook);
 
         // Get the content of the title tag
-        preg_match('(<title[^>]*>(.*?)</title>)', $file, $matches);
-        $this->title = $matches[0];
+        preg_match('/<title>(.+)<\/title>/i', $file, $matches);
+        $this->title = $matches[1];
 
         // Get the content of the body tag
         preg_match('/<body.*\/body>/s', $file, $matches);
