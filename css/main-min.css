@@ -205,7 +205,8 @@ body {
     text-align: center; }
   .content .ebook-content {
     margin: auto;
-    max-width: 50rem; }
+    max-width: 50rem;
+    overflow: hidden; }
 
 /* ----------------- */
 /* 404 & easter eggs */
