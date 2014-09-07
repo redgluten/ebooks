@@ -7,7 +7,7 @@
 require_once "functions.php";
 
 // Création d’un nouveau livre
-$eBook = new eBook('ebooks/ebook_test/Ops/10.html');
+$eBook = new eBook('ebooks/ebook_test/Ops/');
 
 ?>
 

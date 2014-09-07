@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="BookId">
-<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-<dc:title>Arsène Lupin Gentleman-cambrioleur</dc:title>
-<dc:creator opf:file-as="Leblanc, Maurice" opf:role="aut">Maurice Leblanc</dc:creator>
-<dc:subject>Crime - Mystère - Policier</dc:subject>
-<dc:publisher>Ebooks libres et gratuits</dc:publisher>
-<dc:date>2010-05-27</dc:date>
-<dc:identifier id="BookId">awp2010-05-27T00:06:12Z</dc:identifier>
-<dc:language>fr</dc:language>
-<meta name="cover" content="img1"/>
-</metadata>
-<manifest>
-<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
-<item id="style" href="style.css" media-type="text/css"/>
-<item id="id1" href="1.html" media-type="application/xhtml+xml"/>
-<item id="id2" href="2.html" media-type="application/xhtml+xml"/>
-<item id="id3" href="3.html" media-type="application/xhtml+xml"/>
-<item id="id4" href="4.html" media-type="application/xhtml+xml"/>
-<item id="id5" href="5.html" media-type="application/xhtml+xml"/>
-<item id="id6" href="6.html" media-type="application/xhtml+xml"/>
-<item id="id7" href="7.html" media-type="application/xhtml+xml"/>
-<item id="id8" href="8.html" media-type="application/xhtml+xml"/>
-<item id="id9" href="9.html" media-type="application/xhtml+xml"/>
-<item id="id10" href="10.html" media-type="application/xhtml+xml"/>
-<item id="id11" href="11.html" media-type="application/xhtml+xml"/>
-<item id="id12" href="12.html" media-type="application/xhtml+xml"/>
-<item id="id13" href="13.html" media-type="application/xhtml+xml"/>
-<item id="img1" href="images/img1.jpg" media-type="image/jpeg"/>
-<item id="img2" href="images/img2.jpg" media-type="image/jpeg"/>
-</manifest>
-<spine toc="ncx">
-<itemref idref="id1" linear="no"/>
-<itemref idref="id2"/>
-<itemref idref="id3"/>
-<itemref idref="id4"/>
-<itemref idref="id5"/>
-<itemref idref="id6"/>
-<itemref idref="id7"/>
-<itemref idref="id8"/>
-<itemref idref="id9"/>
-<itemref idref="id10"/>
-<itemref idref="id11"/>
-<itemref idref="id12"/>
-<itemref idref="id13"/>
-</spine>
-<guide>
-<reference type="cover" title="Cover image" href="1.html"/>
-</guide>
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>Arsène Lupin Gentleman-cambrioleur</dc:title>
+		<dc:creator opf:file-as="Leblanc, Maurice" opf:role="aut">Maurice Leblanc</dc:creator>
+		<dc:subject>Crime - Mystère - Policier</dc:subject>
+		<dc:publisher>Ebooks libres et gratuits</dc:publisher>
+		<dc:date>2010-05-27</dc:date>
+		<dc:identifier id="BookId">awp2010-05-27T00:06:12Z</dc:identifier>
+		<dc:language>fr</dc:language>
+		<meta name="cover" content="img1"/>
+	</metadata>
+	<manifest>
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+		<item id="style" href="style.css" media-type="text/css"/>
+		<item id="id1" href="1.html" media-type="application/xhtml+xml"/>
+		<item id="id2" href="2.html" media-type="application/xhtml+xml"/>
+		<item id="id3" href="3.html" media-type="application/xhtml+xml"/>
+		<item id="id4" href="4.html" media-type="application/xhtml+xml"/>
+		<item id="id5" href="5.html" media-type="application/xhtml+xml"/>
+		<item id="id6" href="6.html" media-type="application/xhtml+xml"/>
+		<item id="id7" href="7.html" media-type="application/xhtml+xml"/>
+		<item id="id8" href="8.html" media-type="application/xhtml+xml"/>
+		<item id="id9" href="9.html" media-type="application/xhtml+xml"/>
+		<item id="id10" href="10.html" media-type="application/xhtml+xml"/>
+		<item id="id11" href="11.html" media-type="application/xhtml+xml"/>
+		<item id="id12" href="12.html" media-type="application/xhtml+xml"/>
+		<item id="id13" href="13.html" media-type="application/xhtml+xml"/>
+		<item id="img1" href="images/img1.jpg" media-type="image/jpeg"/>
+		<item id="img2" href="images/img2.jpg" media-type="image/jpeg"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="id1" linear="no"/>
+		<itemref idref="id2"/>
+		<itemref idref="id3"/>
+		<itemref idref="id4"/>
+		<itemref idref="id5"/>
+		<itemref idref="id6"/>
+		<itemref idref="id7"/>
+		<itemref idref="id8"/>
+		<itemref idref="id9"/>
+		<itemref idref="id10"/>
+		<itemref idref="id11"/>
+		<itemref idref="id12"/>
+		<itemref idref="id13"/>
+	</spine>
+	<guide>
+		<reference type="cover" title="Cover image" href="1.html"/>
+	</guide>
 </package>

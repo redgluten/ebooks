@@ -1,4 +1,4 @@
-/* ==================== */ 
+/* ==================== */
 /*         RESET        */
 /* ==================== */
 
@@ -8,7 +8,7 @@
 li { margin-bottom: .75rem; }
 
 
-// ==================== // 
+// ==================== //
 //        COLORS        //
 // ==================== //
 
@@ -20,7 +20,7 @@ $Gray: #BBBCBB;
 $darkGray: #272822;
 
 
-/* ==================== */ 
+/* ==================== */
 /*      TYPOGRAPHY      */
 /* ==================== */
 
@@ -83,17 +83,22 @@ p {
 
 
 
-/* ==================== */ 
+/* ==================== */
 /*      UI OBJECTS      */
 /* ==================== */
 
+%clearfix {
+    *zoom: 1;
+    &:before, &:after { content: " "; display: table; }
+    &:after { clear: both; }
+}
 
 .hidden { display: none; }
 .centered-img { display: block; margin: auto; height: auto; width: 100%; max-width: 750px; }
 
 
 
-/* ==================== */ 
+/* ==================== */
 /*        LAYOUT        */
 /* ==================== */
 
@@ -131,17 +136,26 @@ body {
 } // body
 
 .page-wrapper {
-	
+
+}
+
+.main-header {
+	@include breakpoints;
+	@include spacing;
 }
 
 .content {
 	@include breakpoints;
 	@include spacing;
 
+	.ebook-content {
+		margin: auto;
+		max-width: 50rem;
+	}
 }
 
 
-/* ----------------- */ 
+/* ----------------- */
 /* 404 & easter eggs */
 /* ----------------- */
 
