@@ -2,30 +2,35 @@
 
 class eBook {
 
-	private $title = 'test';
+    private $title   = '';
+    private $content = '';
 
-	public function __construct ($pathToEbook) {
+    public function __construct ($pathToEbook) {
 
-		// On lit le contenu du fichier ebook
-		$ebook = simplexml_load_file($pathToEbook, null, LIBXML_NOCDATA);
+        // Reads file into a string
+        $file = file_get_contents($pathToEbook);
+
+        // Get the content of the title tag
+        preg_match('(<title[^>]*>(.*?)</title>)', $file, $matches);
+        $this->title = $matches[0];
+
+        // Get the content of the body tag
+        preg_match('/<body.*\/body>/s', $file, $matches);
+        $this->content = $matches[0];
+    }
 
 
-		// Parcours des nœuds du fichier XML
-		foreach ($noeuds as $noeud) {
+    // Getters
 
+    public function getTitle () {
+        return $this->title;
+    }
 
-
-		}
-	}
-
-
-	// Getters
-
-	public function getTitle () {
-		return $this->title;
-	}
+    public function getContent () {
+        return $this->content;
+    }
 
 
 }
 
- ?>
+?>
