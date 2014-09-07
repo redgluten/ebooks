@@ -48,7 +48,6 @@ class eBook {
                         if ($ebookElementType == 'image/jpeg') {
                             array_push($this->images, $ebookElementPath);
                         }
-
                     }
                 }
             }

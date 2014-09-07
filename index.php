@@ -6,8 +6,11 @@
 // Appel des fonctions principales
 require_once "functions.php";
 
-// Création d’un nouveau livre
-$eBook = new eBook('ebooks/ebook_test/Ops/');
+if (isset($eBook)) {
+	$pageTitle = $eBook->getTitle();
+} else {
+	$pageTitle = 'Home';
+}
 
 ?>
 
