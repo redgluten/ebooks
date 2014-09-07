@@ -17,7 +17,7 @@ $eBook = new eBook('ebooks/ebook_test/Ops/');
 
 <?php include "head.php"; ?>
 
-<body>
+<body id="top">
 
 	<div class="page-wrapper">
 		<?php include "header.php"; ?>
