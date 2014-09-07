@@ -8,8 +8,6 @@ class eBook {
 
     public function __construct ($pathToEbook) {
 
-        // # Meta-Content //
-
         // Loading the XML file for the meta-content
         $metaXML = new DOMDocument();
         $metaXML->load($pathToEbook . 'content.opf');
@@ -54,28 +52,6 @@ class eBook {
                     }
                 }
             }
-        }
-
-
-        // # Content //
-
-        // Parsing of the different chapters
-        $directory = new RecursiveDirectoryIterator($pathToEbook);
-        $iterator  = new RecursiveIteratorIterator($directory);
-        $files     = new RegexIterator($iterator, '/^.+\.html$/i', RecursiveRegexIterator::GET_MATCH);
-
-        foreach ($files as $file) {
-
-            // Get the path to the chapter file into a string
-            $pathToFile = $file[0];
-
-            // Reads chapter file content into a string
-            $chapter = file_get_contents($pathToFile);
-
-            // Get the content of the body tag
-            preg_match('/<body.*\/body>/s', $chapter, $matches);
-            // TODO : replace the paths for images & such
-            $this->content .= $matches[0];
         }
     }
 
