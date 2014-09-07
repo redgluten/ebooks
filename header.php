@@ -1,3 +1,3 @@
 <header class="main-header">
-	<h1><?= $eBook->getTitle(); ?></h1>
+	<h1 class="logotype">Awesome eBooks project</h1>
 </header>

@@ -12,12 +12,13 @@ li { margin-bottom: .75rem; }
 //        COLORS        //
 // ==================== //
 
-$beige: #F6F6F2;
-$lightRed: #C03A17;
-$darkRed: #782610;
+$beige:     #F6F6F2;
+$lightRed:  #C03A17;
+$darkRed:   #782610;
 $lightGray: #E7E9E8;
-$Gray: #BBBCBB;
-$darkGray: #272822;
+$Gray:      #BBBCBB;
+$darkGray:  #272822;
+$black:     black;
 
 
 /* ==================== */
@@ -40,7 +41,7 @@ h1, h2, h3, h4, h5, h6, {
 	font-feature-settings: "liga", "dlig", "kern";
 }
 
-h1 { font-size: 3.5rem; line-height: .75; margin-bottom: 3rem; }
+h1 { font-size: 3.5rem; line-height: 1; margin-bottom: 3rem; }
 h2 { font-size: 3rem; line-height: .85; margin-bottom: 1.5rem; }
 h3 { font-size: 2rem; line-height: 1; margin-bottom: 0.5rem; }
 h4 { font-size: 1.875rem; line-height: 1.1; margin-bottom: 0.5em; }
@@ -129,10 +130,6 @@ body {
 	font-size: 16px;
 	background-color: $beige;
 	margin: 0;
-
-	/* Padding for the fixed header, disabled when viewport is too small */
-	padding-top: 7rem;
-	@media (max-width: 768px) { padding-top: 0; }
 } // body
 
 .page-wrapper {
@@ -142,11 +139,25 @@ body {
 .main-header {
 	@include breakpoints;
 	@include spacing;
+
+	.logotype {
+		text-transform: uppercase;
+		font-size: 2rem;
+		color: $darkRed;
+		text-align: center;
+		border-top: 1px solid $black;
+		border-bottom: 1px solid $black;
+		padding: 1rem;
+	}
 }
 
 .content {
 	@include breakpoints;
 	@include spacing;
+
+	.content-title {
+		text-align: center;
+	}
 
 	.ebook-content {
 		margin: auto;
