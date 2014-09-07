@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" xml:lang="fr" version="2005-1">
+<head>
+<meta name="dtb:uid" content="awp2010-05-27T00:06:12Z"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>Arsène Lupin Gentleman-cambrioleur</text>
+</docTitle>
+<navMap>
+<navPoint id="navpoint-1" playOrder="1">
+<navLabel>
+<text>Page titre</text>
+</navLabel>
+<content src="1.html"/>
+</navPoint>
+<navPoint id="navpoint-2" playOrder="2">
+<navLabel>
+<text>1 - L’arrestation d’Arsène Lupin</text>
+</navLabel>
+<content src="4.html"/>
+</navPoint>
+<navPoint id="navpoint-3" playOrder="3">
+<navLabel>
+<text>2 - Arsène Lupin en prison</text>
+</navLabel>
+<content src="5.html"/>
+</navPoint>
+<navPoint id="navpoint-4" playOrder="4">
+<navLabel>
+<text>3 - L’évasion d’Arsène Lupin</text>
+</navLabel>
+<content src="6.html"/>
+</navPoint>
+<navPoint id="navpoint-5" playOrder="5">
+<navLabel>
+<text>4 - Le mystérieux voyageur</text>
+</navLabel>
+<content src="7.html"/>
+</navPoint>
+<navPoint id="navpoint-6" playOrder="6">
+<navLabel>
+<text>5 - Le Collier de la Reine</text>
+</navLabel>
+<content src="8.html"/>
+</navPoint>
+<navPoint id="navpoint-7" playOrder="7">
+<navLabel>
+<text>6 - Le sept de cœur</text>
+</navLabel>
+<content src="9.html"/>
+</navPoint>
+<navPoint id="navpoint-8" playOrder="8">
+<navLabel>
+<text>7 - Le coffre-fort de madame Imbert</text>
+</navLabel>
+<content src="10.html"/>
+</navPoint>
+<navPoint id="navpoint-9" playOrder="9">
+<navLabel>
+<text>8 - La perle noire</text>
+</navLabel>
+<content src="11.html"/>
+</navPoint>
+<navPoint id="navpoint-10" playOrder="10">
+<navLabel>
+<text>9 - Herlock Sholmès arrive trop tard</text>
+</navLabel>
+<content src="12.html"/>
+</navPoint>
+<navPoint id="navpoint-11" playOrder="11">
+<navLabel>
+<text>À propos de cette édition électronique</text>
+</navLabel>
+<content src="13.html"/>
+</navPoint>
+</navMap>
+</ncx>

@@ -1,0 +1,182 @@
+/* ==================== */
+/*         RESET        */
+/* ==================== */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+li {
+  margin-bottom: .75rem; }
+
+/* ==================== */
+/*      TYPOGRAPHY      */
+/* ==================== */
+/* Fira Sans */
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/FiraSans/FiraSans-Regular.eot");
+  src: url("../fonts/FiraSans/FiraSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/FiraSans/FiraSans-RegularItalic.eot");
+  src: url("../fonts/FiraSans/FiraSans-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/FiraSans/FiraSans-Bold.eot");
+  src: url("../fonts/FiraSans/FiraSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/FiraSans/FiraSans-BoldItalic.eot");
+  src: url("../fonts/FiraSans/FiraSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Fanwood';
+  src: url("../fonts/Fanwood/fanwood-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Fanwood/fanwood-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Fanwood/fanwood-webfont.svg#FanwoodRegular") format("svg"), url("../fonts/Fanwood/fanwood-webfont.woff") format("woff"), url("../fonts/Fanwood/fanwood-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Fanwood';
+  src: url("../fonts/Fanwood/fanwood_italic-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Fanwood/fanwood_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Fanwood/fanwood_italic-webfont.svg#FanwoodRegular") format("svg"), url("../fonts/Fanwood/fanwood_italic-webfont.woff") format("woff"), url("../fonts/Fanwood/fanwood_italic-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: italic; }
+/* ### Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  /* Activate OpenType features: ligatures, discretionary ligatures and kerning */
+  -webkit-font-feature-settings: "liga", "dlig", "kern";
+     -moz-font-feature-settings: "liga", "dlig", "kern";
+          font-feature-settings: "liga", "dlig", "kern"; }
+
+h1 {
+  font-size: 3.5rem;
+  line-height: .75;
+  margin-bottom: 3rem; }
+
+h2 {
+  font-size: 3rem;
+  line-height: .85;
+  margin-bottom: 1.5rem; }
+
+h3 {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.5rem; }
+
+h4 {
+  font-size: 1.875rem;
+  line-height: 1.1;
+  margin-bottom: 0.5em; }
+
+h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em; }
+
+h6 {
+  font-size: 1.125rem; }
+
+/* ### Links */
+a {
+  color: #c03a17;
+  text-decoration: none;
+  -webkit-transition: .1s ease-in-out;
+          transition: .1s ease-in-out; }
+  a:hover, a:active, a:focus {
+    color: #272822;
+    text-decoration: none;
+    border-bottom: 1px dotted; }
+  a:visited {
+    color: #782610;
+    text-decoration: none; }
+
+/* ### Titles */
+.title {
+  font-family: "Fanwood", Georgia, serif;
+  line-height: 1.5; }
+
+/* ### Paragraphs */
+p {
+  font-family: "Fanwood", Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  /* Activate OpenType features: ligatures, discretionary ligatures and kerning */
+  -webkit-font-feature-settings: "liga", "dlig", "kern";
+     -moz-font-feature-settings: "liga", "dlig", "kern";
+          font-feature-settings: "liga", "dlig", "kern"; }
+
+/* ### Small caps */
+.caps {
+  -webkit-font-feature-settings: "smcp";
+     -moz-font-feature-settings: "smcp";
+          font-feature-settings: "smcp"; }
+
+/* ==================== */
+/*      UI OBJECTS      */
+/* ==================== */
+.hidden {
+  display: none; }
+
+.centered-img {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  max-width: 750px; }
+
+/* ==================== */
+/*        LAYOUT        */
+/* ==================== */
+body {
+  font-family: "Fira Sans", Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #f6f6f2;
+  margin: 0;
+  /* Padding for the fixed header, disabled when viewport is too small */
+  padding-top: 7rem; }
+  @media (max-width: 768px) {
+    body {
+      padding-top: 0; } }
+
+.content {
+  padding: 2rem 1rem;
+  margin: auto; }
+  @media (min-width: 1200px) {
+    .content {
+      max-width: 1170px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .content {
+      max-width: 970px; } }
+  @media (min-width: 769px) and (max-width: 991px) {
+    .content {
+      max-width: 750px; } }
+  @media (min-width: 50px) and (max-width: 768px) {
+    .content {
+      width: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* ----------------- */
+/* 404 & easter eggs */
+/* ----------------- */
+
+/*# sourceMappingURL=main-min.css.map */
