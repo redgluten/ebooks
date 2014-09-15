@@ -2,10 +2,25 @@
 
 class eBook {
 
+    /**
+     * @var string $title
+     */
     private $title   = '';
+
+    /**
+     * @var string $content
+     */
     private $content = '';
+
+    /**
+     * @var array $images
+     */
     private $images  = array();
 
+
+    /**
+     * @param string $pathToEbook
+     */
     public function __construct ($pathToEbook) {
 
         // Loading the XML file for the meta-content
@@ -64,14 +79,81 @@ class eBook {
     }
 
 
-    // Getters
 
-    public function getTitle () {
+    // ### Accessors
+
+    /**
+     * Gets the value of title.
+     *
+     * @return string $title
+     */
+    public function getTitle()
+    {
         return $this->title;
     }
+    
+    /**
+     * Sets the value of title.
+     *
+     * @param string $title $title the title 
+     *
+     * @return self
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
 
-    public function getContent () {
+        return $this;
+    }
+
+
+
+    /**
+     * Gets the value of content.
+     *
+     * @return string $content
+     */
+    public function getContent()
+    {
         return $this->content;
+    }
+    
+    /**
+     * Sets the value of content.
+     *
+     * @param string $content $content the content 
+     *
+     * @return self
+     */
+    public function setContent($content)
+    {
+        $this->content = $content;
+
+        return $this;
+    }
+
+    /**
+     * Gets the value of images.
+     *
+     * @return array $images
+     */
+    public function getImages()
+    {
+        return $this->images;
+    }
+    
+    /**
+     * Sets the value of images.
+     *
+     * @param array $images $images the images 
+     *
+     * @return self
+     */
+    public function setImages($images)
+    {
+        $this->images = $images;
+
+        return $this;
     }
 }
 
