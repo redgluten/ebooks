@@ -27,16 +27,8 @@ class eBook {
         $metaXML = new DOMDocument();
         $metaXML->load($pathToEbook . 'content.opf');
 
-        // Setting the title
-        foreach($metaXML->getElementsByTagName('package') as $root) {
-            foreach($root->getElementsByTagName('metadata') as $metadata) {
-                foreach($metadata->childNodes as $nodeChild) {
-                    if($nodeChild->nodeName == 'dc:title') {
-                        $this->title = $nodeChild->nodeValue;
-                    }
-                }
-            }
-        }
+
+        $this->setTitle($metaXML);
 
         // Looking for the paths for the chapters
         foreach($metaXML->getElementsByTagName('package') as $root) {
@@ -80,7 +72,10 @@ class eBook {
 
 
 
-    // ### Accessors
+    // -------------- //
+    //    Accessors   //
+    // -------------- //
+
 
     /**
      * Gets the value of title.
@@ -99,13 +94,21 @@ class eBook {
      *
      * @return self
      */
-    public function setTitle($title)
+    private function setTitle($metaXML)
     {
-        $this->title = $title;
+
+        foreach($metaXML->getElementsByTagName('package') as $root) {
+            foreach($root->getElementsByTagName('metadata') as $metadata) {
+                foreach($metadata->childNodes as $nodeChild) {
+                    if($nodeChild->nodeName == 'dc:title') {
+                        $this->title = $nodeChild->nodeValue;
+                    }
+                }
+            }
+        }
 
         return $this;
     }
-
 
 
     /**
@@ -131,6 +134,7 @@ class eBook {
 
         return $this;
     }
+
 
     /**
      * Gets the value of images.
